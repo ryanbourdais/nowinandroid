@@ -16,7 +16,7 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: ./gradlew clean && ./gradlew :app:bundleRelease
+      - run: gradle build
   docker-build:
     parameters:
       resource-class:
@@ -27,7 +27,7 @@ jobs:
     resource_class: << parameters.resource-class >>
     steps:
       - checkout
-      - run: ./gradlew clean && ./gradlew :app:bundleRelease
+      - run: gradle build
 
 workflows:
   docker-and-machine-build:
