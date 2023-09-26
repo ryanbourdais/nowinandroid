@@ -3,6 +3,10 @@ orbs:
   android: circleci/android@2.2.0
   gradle: circleci/gradle@3.0.0
 
+parameters:
+  resource-class:
+    type: string
+
 jobs:
   machine-build:
     machine:
