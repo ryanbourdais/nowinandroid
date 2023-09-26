@@ -6,6 +6,7 @@ orbs:
 parameters:
   resource-class:
     type: string
+    default: "medium"
 
 jobs:
   machine-build:
